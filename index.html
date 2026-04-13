@@ -174,6 +174,25 @@
             text-decoration: underline;
         }
 
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .interest-card {
+            background: #f8fbff;
+            border: 1px solid #dbe4f0;
+            border-radius: 16px;
+            padding: 22px;
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+        }
+
+        .interest-card h3 {
+            margin-bottom: 10px;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.9rem;
@@ -204,6 +223,7 @@
 <nav>
     <a href="#about">About</a>
     <a href="#showcase">Showcase</a>
+    <a href="#interests">Interests</a>
     <a href="#reflection">Reflection</a>
     <a href="#linkedin">LinkedIn</a>
 </nav>
@@ -302,6 +322,24 @@ This piece can be considered one of the best because it involves not just theory
         </div>
     </div>
 
+</section>
+
+<section id="interests">
+    <h2>Personal Interests and Transferable Skills</h2>
+    <div class="interest-grid">
+        <div class="interest-card">
+            <h3>Engineering and Innovation</h3>
+            <p>My interest in engineering and innovation has encouraged me to explore ideas that combine technical knowledge with practical application. This has helped me build transferable skills such as problem-solving, creativity, and persistence when approaching new challenges.</p>
+        </div>
+        <div class="interest-card">
+            <h3>Entrepreneurship</h3>
+            <p>My interest in entrepreneurship has strengthened my ability to think strategically, communicate ideas clearly, and consider how technical solutions can have real-world impact. It has also helped me develop initiative, adaptability, and long-term planning skills.</p>
+        </div>
+        <div class="interest-card">
+            <h3>Fitness and Personal Discipline</h3>
+            <p>In my free time, I focus on fitness and personal growth. This interest has helped me build discipline, consistency, and self-motivation, which are valuable transferable skills that support both my academic work and my development as a future engineer.</p>
+        </div>
+    </div>
 </section>
 
 <section id="reflection">
